@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/materialize.min.css" />
+        
+        <title>Malnutrition App</title>
+    </head>
+    <body style="text-align: center;background:#ffffff">
+        
+        <div id="page1">
+            <h2 id="top" class="header" style="font-weight:600;margin-top: 60%">Malnutrition<br>App</h2>    
+            <a id="bp1" class="waves-effect waves-light btn"  style="margin-top: 30%;background: teal">Let's Begin</a>
+        </div>
+        
+        <div id="page2">
+            
+            <p id="top" class="flow-text" style="margin-top: 5%; margin-bottom: 10%">Please fill in the following details...</p>      
+            <div style="margin-right: 10%; margin-left: 10%">
+            <form name='form1'>
+              <div>
+                <p>Name</p>
+                <input type="text" name="name"  id="a">
+              </div>
+              <div>
+                <p>Weight (in kg)</p>
+                <input type="number" name="weight"  id="b">
+              </div>
+              <div>
+                <p>Height (in cm)</p>
+                <input type="number" name="height" id="c">
+              </div>
+              <div>
+                <p>Age</p>
+                <input type="number" name="age"  id="d">
+              </div>
+
+              <p> Gender</p><br>     
+              <input name="gender" type="radio" class="genderRadio" value="Male" id="Male" />
+              <label for="Male">Male </label>
+              
+              <input name="gender" type="radio" class="genderRadio" value="Female" id="Female" />
+              <label for="Female">Female</label>
+              <br>
+              <p>Activity Lavel</p><br>
+              <input name="activity" type="radio" class="activityRadio" value="Sedentary" id="sed" />
+              <label for="sed">Sedantary</label>
+
+              <input name="activity" type="radio" class="activityRadio" value="Lightly Active" id="light" />
+              <label for="light">Lightly Active </label>
+              
+              <input name="activity" type="radio" class="activityRadio" value="Moderately Active" id="moderate" />
+              <label for="moderate">Moderately Active</label>
+              <input name="activity" type="radio" class="activityRadio" value="Highly Active" id="high" />
+              <label for="high">Highly Active</label>
+              <input name="activity" type="radio" class="activityRadio" value="Extremely Active" id="extreme" />
+              <label for="extreme">Extremely Active</label>
+              <a id="bp2" class="waves-effect waves-light btn"  style="margin-top: 30%;background: teal">Calculate Ideal Diet</a>
+
+          </div>
+        </div>
+        
+        <div id="page3">
+            <p id="top" class="flow-text" style="margin-top: 30%; margin-bottom: 10%">This is your Ideal Diet...</p>      
+            <div id="result"></div>
+            <a id="bp3" class="waves-effect waves-light btn"  style="margin-top: 30%;background: teal">Input your Diet</a>
+     
+        </div>
+        
+        <div id="page4">
+            <div class="row">
+              <div class="col s12 m5">
+                <div class="card-panel teal">
+                  <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                  </span>
+
+                </div>
+              </div>
+            </div>  
+            <a id="bp4" class="waves-effect waves-light btn"  style="margin-top: 30%;background: teal">Input your Diet</a>
+
+        </div>
+        
+        <div id="page5">
+            <p id="top" class="flow-text" style="margin-top: 30%; margin-bottom: 10%">Deficiencies</p>      
+            <div id="deficiency"></div>
+        </div>
+
+    
+        <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>    
+    </body>
+</html>
